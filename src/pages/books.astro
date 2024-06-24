@@ -1,0 +1,45 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Book from "../components/Book.astro";
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>电子书字源</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 3em;
+        margin: 1em 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <Navigation />
+    <h1>电子书资源</h1>
+    <ul>
+      <Book
+        title="设计心理学"
+        body="设计心理学说明"
+        href="“https://bing.com"
+        img="https://th.bing.com/th/id/OIP.tJzAoFQsxfxGkzLqapSSIwHaLZ?rs=1&pid=ImgDetMain"
+      />
+      <Book
+        title="设计心理学"
+        body="设计心理学说明"
+        href="“https://bing.com"
+        img="https://th.bing.com/th/id/OIP.tJzAoFQsxfxGkzLqapSSIwHaLZ?rs=1&pid=ImgDetMain"
+      />
+    </ul>
+    <Footer />
+  </body>
+</html>
